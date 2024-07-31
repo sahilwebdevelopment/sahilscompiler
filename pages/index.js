@@ -24,6 +24,7 @@ export default function Home() {
               className="w-1/2"
               height="90vh"
               theme="vs-dark"
+              language={value}
               defaultLanguage={value}
               defaultValue=""
               onMount={handleEditorDidMount}
