@@ -6,7 +6,7 @@ function Language(props) {
   let setValue = props.setValue
   let list = useRef()
   return (
-    <div className="py-3 flex justify-center flex-col">
+    <div className="py-3 inline-flex justify-center flex-col">
       <div className="flex items-center">
       <div className="px-4 text-xl text-white">Language: </div>
       <div className="text-xl px-3 text-white bg-slate-600 h-12 flex items-center justify-center shadow-lg rounded-lg">
@@ -22,8 +22,8 @@ function Language(props) {
       <div ref={list} className="hidden absolute left-[7.6rem] top-16 z-10 bg-slate-600 w-40 rounded-lg shadow-lg">
         <div className="text-white py-2 px-4 hover:bg-slate-900 rounded-lg" onClick={()=>{setValue("javascript")}}>javaScript</div>
         <div className="text-white py-2 px-4 hover:bg-slate-900 rounded-lg" onClick={()=>{setValue("python")}}>Python</div>
-        <div className="text-white py-2 px-4 hover:bg-slate-900 rounded-lg" onClick={()=>{setValue("C++")}}>C++</div>
-        <div className="text-white py-2 px-4 hover:bg-slate-900 rounded-lg" onClick={()=>{setValue("C")}}>C</div>
+        <div className="text-white py-2 px-4 hover:bg-slate-900 rounded-lg" onClick={()=>{setValue("c++")}}>C++</div>
+        <div className="text-white py-2 px-4 hover:bg-slate-900 rounded-lg" onClick={()=>{setValue("csharp")}}>csharp</div>
       </div>
     </div>
   );
