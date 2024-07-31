@@ -16,6 +16,7 @@ export default function Home() {
 
   return (
     <div className="bg-slate-800">
+      <div className="text-xl text-white pt-4 pb-4 pl-8 bg-slate-600">Hello I am sahil chandwani</div>
       <div className="flex md:flex-row flex-col">
         <div className="px-4 flex justify-between flex-col w-full md:w-1/2 mb-4">
           <Language value={value} setValue={setValue} />
