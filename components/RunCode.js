@@ -47,7 +47,7 @@ function RunCode(props) {
   return (
     <button
       onClick={run}
-      className="text-green-500 text-xl mx-4 p-2 rounded-lg inline-block border border-green-500 w-32"
+      className="text-green-500 mt-4 text-xl mx-4 p-2 rounded-lg inline-block border border-green-500 w-32"
     >
       Run Code
     </button>

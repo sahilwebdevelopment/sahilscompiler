@@ -40,10 +40,10 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="flex w-full md:w-1/2 flex-col pt-8 md:pt-4 px-3 mb-4">
+        <div className="flex w-full md:w-1/2 md:h-[100vh] h-[90vh] flex-col pt-8 md:pt-0 px-3 mb-4">
           <RunCode value={value} setValue={setValue} code={code} setCode={setCode} input={input} setInput={setInput} output={output} setOutput={setOutput}/>
-          <textarea placeholder="Write the inputs here" type="text" ref={inputRef} onChange={write} value={input} className="w-full mt-4 h-1/2 bg-zinc-900 p-3 rounded-lg shadow-lg text-white overflow-y-scroll resize-none"></textarea>
-          {<div className="w-full h-1/2 mt-4 bg-zinc-900 p-3 rounded-lg shadow-lg text-white overflow-y-scroll">
+          {value=="python" && <textarea placeholder="Write the inputs here" type="text" ref={inputRef} onChange={write} value={input} className="w-full mt-4 h-1/2 bg-zinc-900 p-3 rounded-lg shadow-lg text-white overflow-y-scroll resize-none"></textarea>}
+          {<div className="w-full mt-4 h-full bg-zinc-900 p-3 rounded-lg shadow-lg text-white overflow-y-scroll">
             {output}
           </div>}
         </div>
