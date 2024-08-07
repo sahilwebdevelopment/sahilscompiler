@@ -2,6 +2,7 @@ import React from "react";
 
 function RunCode(props) {
   const input = props.code
+  const go = props.input
   const url = "https://emkc.org/api/v2/piston/execute";
   const version = ()=>{
     if(props.value == "csharp"){
@@ -23,6 +24,7 @@ function RunCode(props) {
         content: input,
       },
     ],
+    stdin: go
   };
 
   async function run() {
