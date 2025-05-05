@@ -5,3 +5,21 @@
 *{
     white-space: pre-line;
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.Open{
+    padding: 10px;
+    border: 1px solid green;
+    color: green;
+    border-radius: 7px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.CodeName{
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}

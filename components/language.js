@@ -9,8 +9,8 @@ function Language(props) {
     <div className="py-3 inline-flex justify-center flex-col">
       <div className="flex items-center">
         <div className="px-4 text-xl text-white cursor-default">Language: </div>
-        <div
-          className="text-xl px-3 cursor-pointer text-white bg-slate-600 h-12 flex items-center justify-center shadow-lg rounded-lg"
+        <button
+          className="text-xl px-3 outline-none cursor-pointer text-white bg-zinc-900 h-12 flex items-center justify-center shadow-lg rounded-lg"
           onClick={() => {
             if (
               list.current.style.display == "" ||
@@ -21,47 +21,47 @@ function Language(props) {
               list.current.style.display = "none";
             }
           }}
+          onBlur={() => {
+              list.current.style.display = "none";
+          }}
         >
           <div className="mx-2">{value}</div>
           <IoMdArrowDropdown className="text-3xl" />
-        </div>
+        </button>
       </div>
       <div
         ref={list}
-        className="hidden absolute left-[8.5rem] cursor-pointer top-32 z-10 bg-slate-600 w-40 rounded-lg shadow-lg"
+        className="hidden absolute left-[8.5rem] cursor-pointer top-32 z-10 bg-neutral-800 w-40 rounded-lg shadow-lg"
       >
         <div
-          className="text-white py-2 px-4 hover:bg-slate-900 rounded-lg"
-          onClick={() => {
+          className="text-white py-2 px-4 hover:bg-zinc-900 rounded-lg"
+          onMouseEnter={() => {
             setValue("javascript");
-            list.current.style.display = "none";
           }}
         >
           javaScript
         </div>
         <div
-          className="text-white py-2 px-4 hover:bg-slate-900 rounded-lg"
-          onClick={() => {
+          className="text-white py-2 px-4 hover:bg-zinc-900 rounded-lg"
+          onMouseEnter={() => {
             setValue("python");
-            list.current.style.display = "none";
+            console.log("hovered")
           }}
         >
           Python
         </div>
         <div
-          className="text-white py-2 px-4 hover:bg-slate-900 rounded-lg"
-          onClick={() => {
+          className="text-white py-2 px-4 hover:bg-zinc-900 rounded-lg"
+          onMouseEnter={() => {
             setValue("c++");
-            list.current.style.display = "none";
           }}
         >
           C++
         </div>
         <div
-          className="text-white py-2 px-4 hover:bg-slate-900 rounded-lg"
-          onClick={() => {
+          className="text-white py-2 px-4 hover:bg-zinc-900 rounded-lg"
+          onMouseEnter={() => {
             setValue("csharp");
-            list.current.style.display = "none";
           }}
         >
           csharp
